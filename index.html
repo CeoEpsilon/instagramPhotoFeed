@@ -8,115 +8,126 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="style.css" />
 	<title>02 Bootstrap Skeleton</title>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container">
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand" href="#">
-				<img img src="https://i.ibb.co/BqL2KYq/logoinstagram.png" alt="logoinstagram" border="0" width="30" height="30" class="d-inline-block align-top" alt="">Instagram
-                </a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#" style="padding:0">
-								<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Create a new post</button>
+				<img id="instagramImage" src="https://i.ibb.co/BqL2KYq/logoinstagram.png" alt="logoinstagram"
+					class="d-inline-block align-top" />
+				Instagram
+			</a>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#" style="padding:0">
+						<button type="button" class="btn btn-success" data-toggle="modal" data-target="#postModal"
+							data-whatever="@getbootstrap">Create a new post</button>
+					</a>
+				</li>
 
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-									aria-labelledby="exampleModalLabel" aria-hidden="true">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
+				<li class="dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-cog"></i>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+							<button class="dropdown-item" type="button">Action</button>
+							<button class="dropdown-item" type="button">Another action</button>
+							<button class="dropdown-item" type="button">Something else here</button>
+						</div>
+					</a>
 
-											<div class="modal-body">
-												<form>
-													<div class="form-group">
-														<textarea class="form-control" id="message-text"></textarea>
-													</div>
-													<div>
-														<i class="fas fa-camera"></i>
-														<i></i>
-														<i class="fas fa-map-marker-alt"></i>
-													</div>
-												</form>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-												<button type="button" class="btn btn-success">Public</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Dropdown
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Something else here</a>
-							</div>
-						</li>
-						<li class="nav-item">
-					</ul>
-				</div>
+				</li>
+			</ul>
+		</nav>
+		<div class="grades row p-3">
+			<div class="col-md-12 col-sm-12 text-center vista">
+				<button type="button" class="button-photo-grid btn">
+					<i class="teste3 fas fa-th text-secondary align-top"></i>
+				</button>
+				<button type="button" class="button-one-photo btn">
+					<i class="teste4 fas fa-square text-secondary align-top"></i>
+				</button>
+			</div>
 		</div>
-	</nav>
-	<div class="row">
-		<div class="col-4">
-			<img src="https://i.ibb.co/6ypcB8b/css3.png" alt="css3" style="margin-top: 15px" class="img-fluid mx-auto d-block" alt="Responsive image">
-            </div>
-			<div class="col-4">
-				<img src="https://i.ibb.co/LYHHwfX/html5.png" alt="css3"  style="margin-top: 15px" class="img-fluid mx-auto d-block" alt="Responsive image">
-            </div>
-				<div class="col-4">
-					<img src="https://i.ibb.co/MgzBWzM/js.png" alt="css3"  style="margin-top: 15px" class="img-fluid mx-auto d-block" alt="Responsive image">
-            </div>
-				</div>
-				<div class="row">
-					<div class="col-4">
-						<img src="https://i.ibb.co/6ypcB8b/css3.png" alt="css3"  style="margin-top: 15px" class="img-fluid mx-auto d-block" alt="Responsive image">
-            </div>
-						<div class="col-4">
-							<img src="https://i.ibb.co/LYHHwfX/html5.png" alt="css3"  style="margin-top: 15px" class="img-fluid mx-auto d-block" alt="Responsive image">
-            </div>
-							<div class="col-4">
-								<img src="https://i.ibb.co/MgzBWzM/js.png" alt="css3"  style="margin-top: 15px" class="img-fluid mx-auto d-block" alt="Responsive image">
-            </div>
-							</div>
-							<div class="row">
-								<div class="col-4">
-									<img src="https://i.ibb.co/6ypcB8b/css3.png" alt="css3"   style="margin-top: 15px"  class="img-fluid mx-auto d-block" alt="Responsive image">
-            </div>
-									<div class="col-4">
-										<img src="https://i.ibb.co/LYHHwfX/html5.png" alt="css3"   style="margin-top: 15px" class="img-fluid mx-auto d-block" alt="Responsive image">
-            </div>
-										<div class="col-4">
-											<img src="https://i.ibb.co/MgzBWzM/js.png" alt="css3"  style="margin-top: 15px" class="img-fluid mx-auto d-block" alt="Responsive image">
-            </div>
-										</div>
+		<div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
 
-										<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-											integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-											crossorigin="anonymous"></script>
-										<script
-											src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-											integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-											crossorigin="anonymous"></script>
-										<script
-											src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-											integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-											crossorigin="anonymous"></script>
-										<script src="https://kit.fontawesome.com/0805582109.js" crossorigin="anonymous">
-										</script>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<textarea class="form-control" id="message-text"></textarea>
+							</div>
+							<div>
+								<i class="fas fa-camera" id="camera"></i>
+								<i class="fas fa-map-marker-alt" id="location"></i>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-success">Public</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 ">
+				<img src="https://i.ibb.co/sqkKHNQ/Steve-Jobs-Quotes-Wallpaper-Stay-Hungry-Stay-Foolish-3.jpg"
+					alt="Steve-Jobs-Quotes-Wallpaper-Stay-Hungry-Stay-Foolish-3"
+					class="img-fluid mx-auto d-block images">
+			</div>
+			<div class="col-4 ">
+				<img src="https://i.ibb.co/zx24rQn/developers.png" alt="developers"
+					class="img-fluid mx-auto d-block images">
+			</div>
+			<div class="col-4 ">
+				<img src="https://i.ibb.co/M7RjQwS/giphy-2-1.gif" alt="giphy-2-1"
+					class="img-fluid mx-auto d-block images">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 ">
+				<img src="https://i.ibb.co/QPcgtzd/languages.jpg" alt="languages"
+					class="img-fluid mx-auto d-block images">
+			</div>
+			<div class="col-4 ">
+				<img src="https://i.ibb.co/qRgkp5m/html5.png" alt="gifdeveloper"
+					class="img-fluid mx-auto d-block images">
+			</div>
+			<div class="col-4 ">
+				<img src="https://i.ibb.co/934fLK2/google.gif" alt="google" class="img-fluid mx-auto d-block images">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 ">
+				<img src="https://i.ibb.co/QrhqXzW/css3.png" alt="css3" class="img-fluid mx-auto d-block images">
+			</div>
+			<div class="col-4 ">
+				<img src="https://i.ibb.co/hDLFRs8/js.png" alt="javascript" class="img-fluid mx-auto d-block images">
+			</div>
+			<div class="col-4 ">
+				<img src="https://i.ibb.co/QNGC6F9/fullstack.png" alt="fullstack"
+					class="img-fluid mx-auto d-block images">
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/0805582109.js" crossorigin="anonymous">
+		</script>
+	</div>
 </body>
 
-</html>
+</html> 
